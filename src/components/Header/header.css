@@ -1,0 +1,113 @@
+header {
+  position: fixed;
+  width: 100%;
+  border-bottom: 1px solid grey;
+}
+
+.headerBottom {
+  padding: 30px 20px;
+  background-color: transparent;
+  height: 50px;
+  transition: all 0.2s ease-in-out;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header:hover .headerBottom {
+  background-color: white;
+}
+
+header:hover .headerBottom img {
+  content: url("../../assets/logo-black.svg");
+}
+
+.headerBottomScrolled {
+  background-color: white;
+  color: black;
+}
+
+.headerLinkBottom {
+  transition: all 0.2s ease-in-out;
+  color: white;
+  padding: 8px;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+header:hover .headerLinkBottom {
+  color: white;
+  color: #173d7a;
+}
+
+.headerLinkBottomScrolled {
+  color: #173d7a;
+}
+
+.headerBottom button {
+  cursor: pointer;
+  border: 2px solid #04809f;
+  padding: 12px 20px;
+  font-size: 14px;
+  font-weight: 700;
+  background-color: #04809f;
+  color: white;
+  transition: all 0.3s;
+}
+
+.headerBottom button:hover {
+  border: 2px solid #04809f;
+  background-color: white;
+  color: #04809f;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.headerTop {
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px;
+}
+
+.linksTop {
+  padding-left: 40px;
+}
+
+.headerLinkTop {
+  color: white;
+  text-decoration: none;
+  padding: 3px 13px;
+  margin-left: 16px;
+  border: solid 1px white;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.socialNetworks {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.socialNetworks a {
+  display: flex;
+  align-items: center;
+}
+
+.socialNetworks p {
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0 10px 0 0;
+  cursor: pointer;
+}
+
+.logoSocialNetworks {
+  height: 15px;
+  margin-left: 10px;
+}
