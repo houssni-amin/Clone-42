@@ -24,50 +24,66 @@ export default function Header() {
     <header>
       <div className="headerTop">
         <div className="linksTop">
-          <a href="/" className="headerLinkTop">
+          <a
+            href="/"
+            className="headerLinkTop"
+            onClick={(e) => e.preventDefault()}
+          >
             Alumni
           </a>
-          <a href="/" className="headerLinkTop">
+          <a
+            href="/"
+            className="headerLinkTop"
+            onClick={(e) => e.preventDefault()}
+          >
             Entreprises
           </a>
-          <a href="/" className="headerLinkTop">
+          <a
+            href="/"
+            className="headerLinkTop"
+            onClick={(e) => e.preventDefault()}
+          >
             Taxe d'apprentissage
           </a>
-          <a href="/" className="headerLinkTop">
+          <a
+            href="/"
+            className="headerLinkTop"
+            onClick={(e) => e.preventDefault()}
+          >
             Presse
           </a>
         </div>
         <div className="socialNetworks">
           <p>FR⏷</p>
-          <a href="/">
+          <a href="/" onClick={(e) => e.preventDefault()}>
             <img
               src={twitter}
               alt="logo de twitter"
               className="logoSocialNetworks"
             />
           </a>
-          <a href="/">
+          <a href="/" onClick={(e) => e.preventDefault()}>
             <img
               src={facebook}
               alt="logo de facebook"
               className="logoSocialNetworks"
             />
           </a>
-          <a href="/">
+          <a href="/" onClick={(e) => e.preventDefault()}>
             <img
               src={linkedin}
               alt="logo de linkedin"
               className="logoSocialNetworks"
             />
           </a>
-          <a href="/">
+          <a href="/" onClick={(e) => e.preventDefault()}>
             <img
               src={instagram}
               alt="logo de instagram"
               className="logoSocialNetworks"
             />
           </a>
-          <a href="/">
+          <a href="/" onClick={(e) => e.preventDefault()}>
             <img
               src={medium}
               alt="logo de medium"
@@ -80,13 +96,17 @@ export default function Header() {
       <div
         className={`headerBottom ${isScrolled ? "headerBottomScrolled" : ""}`}
       >
-        <img src={isScrolled ? blackLogo : whiteLogo} alt="logo" />
+        <a href="/">
+          <img src={isScrolled ? blackLogo : whiteLogo} alt="logo de 42" />
+        </a>
+
         <div>
           <a
             href="/"
             className={`headerLinkBottom ${
               isScrolled ? "headerLinkBottomScrolled" : ""
             }`}
+            onClick={(e) => e.preventDefault()}
           >
             LE CAMPUS DE PARIS
           </a>
@@ -95,6 +115,7 @@ export default function Header() {
             className={`headerLinkBottom ${
               isScrolled ? "headerLinkBottomScrolled" : ""
             }`}
+            onClick={(e) => e.preventDefault()}
           >
             42 C'EST QUOI ?
           </a>
@@ -103,6 +124,7 @@ export default function Header() {
             className={`headerLinkBottom ${
               isScrolled ? "headerLinkBottomScrolled" : ""
             }`}
+            onClick={(e) => e.preventDefault()}
           >
             LE PROGRAMME
           </a>
@@ -111,6 +133,7 @@ export default function Header() {
             className={`headerLinkBottom ${
               isScrolled ? "headerLinkBottomScrolled" : ""
             }`}
+            onClick={(e) => e.preventDefault()}
           >
             LE RÉSEAU MONDIAL
           </a>
@@ -119,6 +142,7 @@ export default function Header() {
             className={`headerLinkBottom ${
               isScrolled ? "headerLinkBottomScrolled" : ""
             }`}
+            onClick={(e) => e.preventDefault()}
           >
             ADMISSION
           </a>
@@ -127,6 +151,7 @@ export default function Header() {
             className={`headerLinkBottom ${
               isScrolled ? "headerLinkBottomScrolled" : ""
             }`}
+            onClick={(e) => e.preventDefault()}
           >
             APRÈS 42
           </a>
@@ -135,6 +160,7 @@ export default function Header() {
             className={`headerLinkBottom ${
               isScrolled ? "headerLinkBottomScrolled" : ""
             }`}
+            onClick={(e) => e.preventDefault()}
           >
             FAQ
           </a>
@@ -143,6 +169,7 @@ export default function Header() {
             className={`headerLinkBottom ${
               isScrolled ? "headerLinkBottomScrolled" : ""
             }`}
+            onClick={(e) => e.preventDefault()}
           >
             CONTACT
           </a>
