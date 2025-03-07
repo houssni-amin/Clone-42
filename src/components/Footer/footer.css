@@ -1,0 +1,102 @@
+footer {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  padding: 170px 0 30px 0;
+  font-size: 14px;
+}
+
+.footerContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.footerTop {
+  display: flex;
+}
+.footerTopLeft {
+  max-width: 300px;
+  color: white;
+}
+
+footer .logoSocialNetworks {
+  margin: 0 10px 0 0;
+}
+
+.footerTopRight h4 {
+  margin: 0 0 20px 0;
+}
+
+.footerTopRight p {
+  margin: 0 0 5px 0;
+}
+
+.footerBottom {
+  display: flex;
+  justify-content: space-between;
+  border-top: solid 1px grey;
+  margin-top: 30px;
+  padding-top: 30px;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+footer p {
+  cursor: pointer;
+}
+
+.footerTopRight .column {
+  max-width: 175px;
+}
+
+.footerTopRight {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: auto auto;
+  grid-template-areas:
+    "leCampusDeParis cestquoi leProgramme leReseauMondial"
+    "admissions apres toutSavoirSur alumni"
+    "entreprises presse nosEngagements contact";
+  gap: 20px;
+  margin-left: 100px;
+}
+
+.footerTopRight .leCampusDeParis {
+  grid-area: leCampusDeParis;
+}
+.footerTopRight .cestquoi {
+  grid-area: cestquoi;
+}
+.footerTopRight .leProgramme {
+  grid-area: leProgramme;
+}
+.footerTopRight .leReseauMondial {
+  grid-area: leReseauMondial;
+}
+.footerTopRight .admissions {
+  grid-area: admissions;
+}
+.footerTopRight .apres {
+  grid-area: apres;
+}
+.footerTopRight .toutSavoirSur {
+  grid-area: toutSavoirSur;
+}
+.footerTopRight .alumni {
+  grid-area: alumni;
+}
+.footerTopRight .entreprises {
+  grid-area: entreprises;
+}
+.footerTopRight .presse {
+  grid-area: presse;
+}
+.footerTopRight .nosEngagements {
+  grid-area: nosEngagements;
+}
+.footerTopRight .contact {
+  grid-area: contact;
+}
