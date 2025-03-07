@@ -10,18 +10,34 @@ import medium from "../../assets/logo-medium.png"
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false)
+  const [isHidden, setIsHidden] = useState(false)
+  const [lastScrollY, setLastScrollY] = useState(0)
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 1)
+      const currentScrollY = window.scrollY
+
+      if (currentScrollY > 1) {
+        setIsScrolled(true)
+      } else {
+        setIsScrolled(false)
+      }
+
+      if (currentScrollY > lastScrollY && currentScrollY > 400) {
+        setIsHidden(true)
+      } else {
+        setIsHidden(false)
+      }
+
+      setLastScrollY(currentScrollY)
     }
 
     window.addEventListener("scroll", handleScroll)
     return () => window.removeEventListener("scroll", handleScroll)
-  }, [])
+  }, [lastScrollY])
 
   return (
-    <header>
+    <header className={`${isHidden ? "hidden" : ""}`}>
       <div className="headerTop">
         <div className="linksTop">
           <a
