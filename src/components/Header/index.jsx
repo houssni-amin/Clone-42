@@ -23,7 +23,7 @@ export default function Header() {
         setIsScrolled(false)
       }
 
-      if (currentScrollY > lastScrollY && currentScrollY > 400) {
+      if (currentScrollY > lastScrollY && currentScrollY > 300) {
         setIsHidden(true)
       } else {
         setIsHidden(false)
