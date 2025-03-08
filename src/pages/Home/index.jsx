@@ -4,6 +4,11 @@ import iconMan from "../../assets/iconMan.svg"
 import iconProjects from "../../assets/iconProjects.svg"
 import iconPeer from "../../assets/iconPeer.svg"
 import iconGame from "../../assets/iconGame.svg"
+import valueOne from "../../assets/valueOne.svg"
+import valueTwo from "../../assets/valueTwo.svg"
+import valueThree from "../../assets/valueThree.svg"
+import valueFour from "../../assets/valueFour.svg"
+import valuePicture from "../../assets/valuePicture.jpg"
 
 export default function Home() {
   return (
@@ -53,6 +58,59 @@ export default function Home() {
             </li>
           </ul>
           <button>Le code source</button>
+        </div>
+      </section>
+
+      <section className="values">
+        <div className="valuesContent">
+          <div className="valuesTop">
+            <img src={valuePicture} alt="Un homme devant un ordinateur" />
+            <div className="valuesRight">
+              <div className="borderTopValues"></div>
+              <h2>NOS VALEURS</h2>
+              <p>
+                La position de 42 est unique dans le monde de l'enseignement
+                supérieur : elle repose sur des valeurs fortes pour une
+                insertion professionnelle durable sur le marché de l'emploi.
+              </p>
+              <h4>Pourquoi 42 est-elle si différente ?</h4>
+              <button>Un concept unique</button>
+            </div>
+          </div>
+          <ul>
+            <li>
+              <img
+                src={valueOne}
+                className="valueIcon"
+                alt="Logo argent barré"
+              />
+              <p>GRATUITÉ</p>
+            </li>
+            <li>
+              <img src={valueTwo} className="valueIcon" alt="Logo diplôme " />
+              <p>POUR TOUS, POUR TOUTES</p>
+            </li>
+            <li>
+              <img
+                src={valueThree}
+                className="valueIcon"
+                alt="Logo diplôme barré"
+              />
+              <p>AUCUN DIPLÔME REQUIS</p>
+            </li>
+            <li>
+              <img
+                src={valueFour}
+                className="valueIcon"
+                alt="Logo ordinateur"
+              />
+              <p>
+                PAS BESOIN DE SAVOIR <br />
+                DÉJÀ CODER OU D'AIMER
+                <br /> LES MATHS
+              </p>
+            </li>
+          </ul>
         </div>
       </section>
     </div>
