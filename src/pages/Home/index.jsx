@@ -1,5 +1,6 @@
 import "./home.css"
 import YouTubeVideo from "../../components/YoutubeVideo"
+import TextCarousel from "../../components/TextCarousel"
 import backgroundProgram from "../../assets/background-program.png"
 import iconMan from "../../assets/iconMan.svg"
 import iconProjects from "../../assets/iconProjects.svg"
@@ -12,6 +13,16 @@ import valueFour from "../../assets/valueFour.svg"
 import valuePicture from "../../assets/valuePicture.jpg"
 
 export default function Home() {
+  const statisticsItems = [
+    { title: "PLUS DE 4000", text: "ÉTUDIANTS ET ÉTUDIANTES" },
+    { title: "35%", text: "SANS DIPLÔME" },
+    { title: "40%", text: "NE SAVAIENT PAS CODER" },
+    { title: "24 ANS", text: "MOYENNE D'ÂGE" },
+    { title: "100%", text: "EMBAUCHE APRÈS LE TRONC COMMUN" },
+    { title: "47 000€", text: "SALAIRE MOYEN EN SORTIE" },
+    { title: "10%", text: "INTERNATIONAUX" },
+    { title: "0€", text: "COÛT DES ÉTUDES" },
+  ]
   return (
     <div className="homeContainer">
       <section className="titleContainer">
@@ -125,6 +136,12 @@ export default function Home() {
             <YouTubeVideo videoId1="PpCQCgqOt7U" videoId2="fqDiuSE97PM" />
           </div>
         </div>
+      </section>
+
+      <section className="statistics">
+        <div className="borderTopDiscover"></div>
+        <h2>STATISTIQUES 2023 DE 42 À PARIS </h2>
+        <TextCarousel items={statisticsItems} color={"white"} />
       </section>
     </div>
   )

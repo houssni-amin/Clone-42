@@ -256,3 +256,22 @@
 .discoverBottom {
   margin-top: -300px;
 }
+
+.statistics {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-image: url("../../assets/background-statistics.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 100px 0 100px 0;
+}
+
+.statistics h2 {
+  font-size: 35px;
+  color: white;
+  margin-bottom: 50px;
+}
