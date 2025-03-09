@@ -1,4 +1,5 @@
 import "./home.css"
+import YouTubeVideo from "../../components/YoutubeVideo"
 import backgroundProgram from "../../assets/background-program.png"
 import iconMan from "../../assets/iconMan.svg"
 import iconProjects from "../../assets/iconProjects.svg"
@@ -111,6 +112,18 @@ export default function Home() {
               </p>
             </li>
           </ul>
+        </div>
+      </section>
+
+      <section className="discover">
+        <div className="discoverContent">
+          <div className="discoverTop">
+            <div className="borderTopDiscover"></div>
+            <h2>DÉCOUVREZ 42</h2>
+          </div>
+          <div className="discoverBottom">
+            <YouTubeVideo videoId1="PpCQCgqOt7U" videoId2="fqDiuSE97PM" />
+          </div>
         </div>
       </section>
     </div>
