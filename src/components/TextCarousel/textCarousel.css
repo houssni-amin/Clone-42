@@ -1,0 +1,61 @@
+.textCarouselContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 60%;
+  overflow: hidden;
+}
+
+.textCarousel {
+  width: 100%;
+  overflow: hidden;
+}
+
+.textCarouselTrack {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 100%;
+}
+
+.textCarouselItem {
+  flex: 0 0 33.33%;
+  text-align: center;
+}
+
+.textCarouselItem h3 {
+  font-size: 43px;
+  font-weight: 900;
+  margin: 0 0 10px 0;
+}
+
+.textCarouselItem p {
+  font-size: 16px;
+  color: #555;
+  margin: 0;
+}
+
+.textCarouselContainer .buttons {
+  display: flex;
+  margin-top: 50px;
+}
+
+.textCarouselContainer button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 50px;
+  width: 45px;
+  height: 45px;
+}
+
+.textCarouselContainer .prev {
+  margin-right: 10px;
+}
+
+.textCarouselContainer .next {
+  margin-left: 10px;
+}
