@@ -345,3 +345,80 @@
   color: #04809f;
   scale: 0.99;
 }
+
+.paris {
+  position: relative;
+  padding: 100px 0 100px 57%;
+}
+
+.paris .backgroundLeftParis {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 55%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.paris .backgroundRightParis {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.borderTopParis {
+  border: solid 2px #04809f;
+  width: 30px;
+  border-radius: 50px;
+}
+
+.paris h2 {
+  font-size: 35px;
+  margin-bottom: 30px;
+  color: #173d7a;
+}
+
+.paris p {
+  font-size: 14px;
+  margin: 0;
+  color: #475b67;
+}
+
+.paris h4 {
+  margin-top: 5px;
+  margin-bottom: 45px;
+  color: #475b67;
+}
+
+.paris button {
+  cursor: pointer;
+  border: 2px solid #04809f;
+  padding: 12px 20px;
+  font-size: 18px;
+  font-weight: 700;
+  background-color: #04809f;
+  color: white;
+  transition: all 0.3s;
+}
+
+.paris button {
+  cursor: pointer;
+  border: 2px solid #04809f;
+  padding: 12px 20px;
+  font-size: 18px;
+  font-weight: 700;
+  background-color: #04809f;
+  color: white;
+  transition: all 0.3s;
+}
+
+.paris button:hover {
+  border: 2px solid #04809f;
+  background-color: white;
+  color: #04809f;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  scale: 0.99;
+}

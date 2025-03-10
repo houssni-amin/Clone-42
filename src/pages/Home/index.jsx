@@ -11,6 +11,8 @@ import valueTwo from "../../assets/valueTwo.svg"
 import valueThree from "../../assets/valueThree.svg"
 import valueFour from "../../assets/valueFour.svg"
 import valuePicture from "../../assets/valuePicture.jpg"
+import backgroundLeftParis from "../../assets/background-left-paris.jpg"
+import backgroundRightParis from "../../assets/background-right-paris.png"
 
 export default function Home() {
   const statisticsItems = [
@@ -156,6 +158,30 @@ export default function Home() {
           </p>
           <h4>Quels métiers et carrières après ?</h4>
           <button>Après 42</button>
+        </div>
+      </section>
+
+      <section className="paris">
+        <div className="parisContent">
+          <img
+            src={backgroundLeftParis}
+            alt=""
+            className="backgroundLeftParis"
+          />
+          <img
+            src={backgroundRightParis}
+            alt=""
+            className="backgroundRightParis"
+          />
+          <div className="borderTopParis"></div>
+          <h2>PARIS</h2>
+          <p>
+            C'est à Paris que 42 a lancé son premier campus pour offrir
+            <br />
+            le meilleur environnement possible pour apprendre.
+          </p>
+          <h4>Découvrir le campus 42 à Paris</h4>
+          <button>Le campus</button>
         </div>
       </section>
     </div>
