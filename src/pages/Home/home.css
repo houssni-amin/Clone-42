@@ -422,3 +422,79 @@
     rgba(0, 0, 0, 0.22) 0px 15px 12px;
   scale: 0.99;
 }
+
+.international {
+  position: relative;
+  background-image: url("../../assets/background-international.png");
+  background-size: cover;
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+.international::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 1) 40%,
+    rgba(139, 182, 191, 0.7) 100%,
+    transparent 100%
+  );
+  z-index: 1;
+  pointer-events: none;
+}
+
+.internationalContent {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.borderTopInternational {
+  border: solid 2px #04809f;
+  width: 30px;
+  border-radius: 50px;
+}
+.internationalContent h2 {
+  font-size: 35px;
+  margin-bottom: 30px;
+  color: #173d7a;
+}
+
+.internationalContent p {
+  font-size: 14px;
+  margin: 0;
+  color: #475b67;
+}
+
+.internationalContent h4 {
+  margin-top: 5px;
+  margin-bottom: 45px;
+  color: #475b67;
+}
+
+.international button {
+  cursor: pointer;
+  border: 2px solid #04809f;
+  padding: 12px 20px;
+  font-size: 18px;
+  font-weight: 700;
+  background-color: #04809f;
+  color: white;
+  transition: all 0.3s;
+  margin-bottom: 50px;
+}
+
+.international button:hover {
+  background-color: white;
+  color: #04809f;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}

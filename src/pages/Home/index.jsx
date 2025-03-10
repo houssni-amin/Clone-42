@@ -25,6 +25,13 @@ export default function Home() {
     { title: "10%", text: "INTERNATIONAUX" },
     { title: "0€", text: "COÛT DES ÉTUDES" },
   ]
+  const internationalItems = [
+    { title: "54", text: "CAMPUS" },
+    { title: "31", text: "PAYS" },
+    { title: "+21 000", text: "ÉTUDIANTES ET ÉTUDIANTS" },
+    { title: "0€", text: "COÛT DES ÉTUDES" },
+    { title: "26", text: "ÂGE MOYEN SUR L'ENSEMBLE DES CAMPUS" },
+  ]
   return (
     <div className="homeContainer">
       <section className="titleContainer">
@@ -165,12 +172,12 @@ export default function Home() {
         <div className="parisContent">
           <img
             src={backgroundLeftParis}
-            alt=""
+            alt="Campus 42 de Paris"
             className="backgroundLeftParis"
           />
           <img
             src={backgroundRightParis}
-            alt=""
+            alt="Un dégradé"
             className="backgroundRightParis"
           />
           <div className="borderTopParis"></div>
@@ -182,6 +189,21 @@ export default function Home() {
           </p>
           <h4>Découvrir le campus 42 à Paris</h4>
           <button>Le campus</button>
+        </div>
+      </section>
+
+      <section className="international">
+        <div className="internationalContent">
+          <div className="borderTopInternational"></div>
+          <h2>UN RÉSEAU INTERNATIONAL</h2>
+          <p>
+            42 a créé le plus grand réseau d4écoles d4informatique au monde
+            gratuites, innovantes et ouvertes à tous et à toutes.
+          </p>
+          <h4>Où se trouvent les campus 42 dans le monde?</h4>
+          <button>Le réseau mondial</button>
+
+          <TextCarousel items={internationalItems} color={"#04809f"} />
         </div>
       </section>
     </div>
