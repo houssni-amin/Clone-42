@@ -143,6 +143,21 @@ export default function Home() {
         <h2>STATISTIQUES 2023 DE 42 À PARIS </h2>
         <TextCarousel items={statisticsItems} color={"white"} />
       </section>
+
+      <section className="after">
+        <div className="afterContent">
+          <div className="borderTopAfter"></div>
+          <h2>APRÈS 42</h2>
+          <p>
+            Sur un marché du travail en très forte demande de talents
+            numériques,
+            <br /> 42 guide ses étudiantes et ses étudiants vers des carrières à
+            succès et pérennes.
+          </p>
+          <h4>Quels métiers et carrières après ?</h4>
+          <button>Après 42</button>
+        </div>
+      </section>
     </div>
   )
 }
