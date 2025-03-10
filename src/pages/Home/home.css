@@ -498,3 +498,76 @@
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
     rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
+
+.resum {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 0;
+}
+
+.resum h2 {
+  color: #173d7a;
+  font-size: 35px;
+  margin-bottom: 95px;
+}
+
+.resumItem {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.resumInformation {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+}
+
+.resumIconContainer {
+  background-color: #f7f8f9;
+  width: 80px;
+  height: 80px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.resum img {
+  width: 40px;
+}
+
+.resum h3 {
+  font-size: 18px;
+  color: #04809f;
+  text-align: center;
+}
+
+.resum p {
+  color: #475b67;
+  text-align: center;
+  margin: 0;
+}
+
+.resum button {
+  cursor: pointer;
+  border: 2px solid #04809f;
+  padding: 12px 20px;
+  font-size: 18px;
+  font-weight: 700;
+  background-color: #04809f;
+  color: white;
+  transition: all 0.3s;
+  margin-top: 50px;
+}
+
+.resum button:hover {
+  background-color: white;
+  color: #04809f;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  scale: 0.97;
+}

@@ -13,6 +13,12 @@ import valueFour from "../../assets/valueFour.svg"
 import valuePicture from "../../assets/valuePicture.jpg"
 import backgroundLeftParis from "../../assets/background-left-paris.jpg"
 import backgroundRightParis from "../../assets/background-right-paris.png"
+import resum1 from "../../assets/resum1.svg"
+import resum2 from "../../assets/resum2.svg"
+import resum3 from "../../assets/resum3.svg"
+import resum4 from "../../assets/resum4.svg"
+import resum5 from "../../assets/resum5.svg"
+import resum6 from "../../assets/resum6.svg"
 
 export default function Home() {
   const statisticsItems = [
@@ -205,6 +211,61 @@ export default function Home() {
 
           <TextCarousel items={internationalItems} color={"#04809f"} />
         </div>
+      </section>
+
+      <section className="resum">
+        <h2>EN RÉSUMÉ, 42 C'EST:</h2>
+        <div className="resumInformation">
+          <div className="resumItem">
+            <div className="resumIconContainer">
+              <img src={resum1} alt="Icon" />
+            </div>
+            <h3>GRATUIT</h3>
+            <p>Une formation en 3 ans sans frais cachés.</p>
+          </div>
+          <div className="resumItem">
+            <div className="resumIconContainer">
+              <img src={resum2} alt="Icon" />
+            </div>
+            <h3>POUR TOUTES, POUR TOUS</h3>
+            <p>Sans condition de diplôme, dès la majorité.</p>
+          </div>
+          <div className="resumItem">
+            <div className="resumIconContainer">
+              <img src={resum3} alt="Icon" />
+            </div>
+            <h3>PLACE À L'ACTION</h3>
+            <p>Pas de cours, pas de profs, mais de l'entraide.</p>
+          </div>
+          <div className="resumItem">
+            <div className="resumIconContainer">
+              <img src={resum4} alt="Icon" />
+            </div>
+            <h3>RÉSEAU INTERNATIONAL</h3>
+            <p>
+              Plus de 50 campus, plus de 30 <br />
+              pays dans le monde.
+            </p>
+          </div>
+          <div className="resumItem">
+            <div className="resumIconContainer">
+              <img src={resum5} alt="Icon" />
+            </div>
+            <h3>100% D'EMBAUCHE</h3>
+            <p>Dans tous les domaines de l'informatique.</p>
+          </div>
+          <div className="resumItem">
+            <div className="resumIconContainer">
+              <img src={resum6} alt="Icon" />
+            </div>
+            <h3>
+              PAS BESOIN DE DÉJÀ SAVOIR CODER OU <br />
+              D'AIMER LES MATHS
+            </h3>
+            <p>La formation commence de zéro.</p>
+          </div>
+        </div>
+        <button>Postuler dans un campus 42</button>
       </section>
     </div>
   )
